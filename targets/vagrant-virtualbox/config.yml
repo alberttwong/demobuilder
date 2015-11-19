@@ -21,6 +21,11 @@ howto: |
   cd $HOME/vagrant/$IMAGE-SHORT
   vagrant init $IMAGE
 
+  # Optional but highly suggested is to modify your Vagrantfile and up the memory to 8192 for faster VM performance.
+  # uncomment line: config.vm.provider "virtualbox" do |vb|
+  # uncomment and change line: vb.memory = "8192"
+  # uncomment line: end
+
   # Launch the image
   vagrant up
 
